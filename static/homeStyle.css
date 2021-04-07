@@ -1,0 +1,420 @@
+*{
+    margin:0px;
+}
+body::before{
+    content: "";
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: absolute;
+    background: url('../static/fullback.png') no-repeat center center ;
+ }
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    /* background-color :rgb(230, 8, 8); */
+}
+
+#logo{
+   padding-top: 20px;
+   height: 25px;
+   width: 25px;
+}
+#backimg{
+    background: no-repeat url(../static/backimg.jpg);
+    height: 500px;
+    width: 200px;
+    /* background-color: black; */
+}
+
+#other{
+    padding-left: 80px;
+    /* padding-top: 10px; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#intro{
+    /* background-color: brown; */
+    width: 50%;
+    padding-left: 310px;
+    height: 80px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+}
+
+#innerintro{
+    /* background-color: blueviolet; */
+    /* background-color: brown; */
+    font-family: 'Indie Flower', cursive;
+    font-weight:1300;
+    font-size: 20px;
+    width: 525px;
+    padding: 10px;
+    border: 5px rgb(2, 2, 31);
+    border-style:double;
+    border-radius: 30px;
+}
+
+.other1{
+    /* background-color: aqua; */
+    padding-left: 100px;
+   width: 60%;
+}
+
+.btn{
+    margin-top: 50px;
+    /* background-color: green; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    height: 120px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    /* background: no-repeat url(../static/dbox2.png); */
+}
+
+.btn p{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 17px;
+    margin-bottom: 30px;
+    height: 20px;
+}
+
+#regbutton{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 8px;
+    width: 200px;
+    background-color: rgb(12, 13, 77);
+    font-family: 'Libre Baskerville', serif;
+}
+
+#heading{
+    margin-top: 2px;
+    color: rgb(3, 5, 112);
+    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Train One', cursive; */
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 4px;
+}
+#heading2{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(29, 2, 104);
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+#headp{
+   padding: 5px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+#down{
+    /* background-color: cyan; */
+    margin-top: 15px;
+    height: 502px;
+    display: flex;
+    flex-direction: row;
+} 
+
+#card{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 450px;
+    width: 800px;
+    padding: 10px;
+    background-color: rgb(8, 7, 7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#leftbox{
+    width: 250px;
+    height:450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 10px; */
+}
+
+#lupper{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4px;
+    /* background-color: red; */
+   height: 200px;
+   /* background-color: rgb(6, 138, 161); */
+   background-color: rgb(3, 90, 102);
+}
+
+#canvas{
+    align-items: center;
+    margin-top: 25px;
+    /* margin-left: 40px; */
+    /* margin-bottom: 30px; */
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    background-color: rgb(166, 162, 167);
+}
+
+#uploader{
+    color: rgb(3, 90, 102);
+    text-decoration: none;
+}
+
+#ldown{
+    text-align: center;
+    background-color: rgb(145, 245, 220);
+    margin-top: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    /* margin-top: 80px; */
+    padding-top: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+#name{
+    padding-top: 5px;
+    margin: 2px;
+    width: 200px;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    border: none;
+    background-color:  rgb(145, 245, 220);
+    font-family: 'Libre Baskerville', serif;
+}
+
+#title{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    text-decoration: underline;
+    border: none;
+    background-color: rgb(145, 245, 220);
+    font-family: 'Libre Baskerville', serif;
+}
+
+#rightbox{
+    width: 550px;
+    background-color: white;
+}
+
+#rupper{
+    padding: 3px;
+    /* background-color: rgb(95, 243, 194);*/
+} 
+
+#rupper1{
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+}
+#rupper2{
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+}
+
+.basic{
+    background-color: rgb(169, 245, 220);
+    border-radius: 3px;
+    width: 232px;
+    margin: 2px;
+    border: none;
+}
+
+.img{
+    /* background-color: black; */
+  width: 30px;
+  height: 30px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+}
+
+#skills {
+  border: 1px solid rgb(5, 102, 109);
+  border-radius: 10px;
+  padding: 2px;
+}
+#achiev{
+    border: 1px solid rgb(5, 102, 109);
+  border-radius: 10px;
+    margin-top: 2px;
+    padding: 2px;
+}
+#tskills{
+    border: none;
+}
+#tachievemnts{
+    border: none;
+}
+#hskills {
+    text-decoration: underline ;
+    text-align: center;
+    font-size: 18px;
+}
+
+#hachiev {
+    text-decoration: underline ;
+    text-align: center;
+    font-size: 18px;
+}
+
+.mleft{
+    padding: 3px;
+}
+.mright{
+    margin: 3px;
+    padding: 1px;
+    border: 1px solid rgb(5, 102, 109);
+  border-radius: 10px;
+}
+#project{
+    text-decoration: underline ;
+    text-align: center;
+    font-size: 18px;
+}
+#tproject{
+    border: none;
+}
+#rdown{
+    /* background-color: rgb(95, 243, 194); */
+    height: 94px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+    /* border: 2px solid black; */
+    /* margin: 6px; */
+}
+
+.linkedin{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.github{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.facebook{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.social{
+border: none;
+ margin: 2px;
+ height: 23px;
+ width: 500px;
+ background-color: rgb(169, 245, 220);
+ border-radius: 5px;
+}
+.simg{
+    /* background-color: black; */
+    height: 27px;
+    width: 27px;
+}
+
+#num{
+    padding-top: 2px;
+    background: no-repeat url(../static/phone.png);
+}
+#cal{
+    background: no-repeat url(../static/calender.jpeg); 
+}
+#mail{
+    background: no-repeat url(../static/mail.png);
+}
+#city{
+    background: no-repeat url(../static/location.png);
+}
+
+#footer{
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+#lhead{
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 16px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.lheading{
+    font-family: 'Indie Flower', cursive;
+    padding-left: 30px;
+    margin: 3px;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold
+}
+
+.anchor{
+    padding-left: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+#links{
+    font-family: 'Indie Flower', cursive;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding-top: 10px;
+    /* padding-left: 30px; */
+    text-align: center;
+    width:24%;
+    /* background-color: rgb(240, 170, 208); */
+    font-weight: bold;
+    background: no-repeat url(../static/box.png);
+}
+.image{
+     margin-top: 18px;
+     border-radius: 30px;
+    /* background-color: blue; */
+    background: no-repeat url(../static/also.jpeg);
+    width: 150px;
+}

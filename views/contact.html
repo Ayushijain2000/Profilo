@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="../static/contactStyle.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="tag">
+        <div id="heading">Profilo</div>
+        <div id="heading2">The Online Profile Card Builder</div>
+    </div>
+    <div id="down">
+    <div id="form">
+        <form method="post" action="/fillForm" >
+            <input type="text" name="name" class="in" id="name" placeholder="Name">
+        <input type="number" name="age" class="in" id="age" placeholder="Age">
+        <input type="email" name="email" class="in" id="mail" placeholder="Email">
+        <div id="radio">
+            Gender : <div id="inpradio"><input type="radio" name="mygender"> Male</div> 
+            <div id="inpradio"><input type="radio" name="mygender"> Female</div> 
+            <div id="inpradio"><input type="radio" name="mygender"> Other</div> 
+        </div>
+        <input type="text" name="proff" class="in" id="profession" placeholder="Profession">
+        <button type="submit" id="reg">Register Me</button>
+        </form>     
+    </div>
+    <div id="downleft">
+        <div id="contact">
+            <div id="head">Contact Us</div>
+            <div class="mycontact">
+               <div class="img"><img src="../static/phone.png"></div>
+               <div class="para">Call Us : +91-11110000</div>
+            </div>
+            <div class="mycontact">
+              <div class="img"><img src="../static/mail.png"></div>
+              <div class="para">Mail Us : profilo-2000@gmail.com</div>
+            </div>
+        </div>
+        <div>
+            <img id="imageback" src="../static/proff4.jpeg">
+           </div>
+    </div> 
+    </div>
+
+    <div id="footer">
+        Copyright @ 2021 Profile Card || All Rights Reserved
+   </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Own Profile Card</title>
+
+    <link rel="stylesheet" href="../static/homeStyle.css">
+    <link rel="stylesheet" href="../static/index.js">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+  <div id="navbar">
+    <div id="logo">
+      <img src="../static/logoForP.jpeg">
+    </div>
+    <div id="other">
+      <div class="other1">
+        <div id="heading">Profilo</div>
+        <div id="heading2">The Online Profile Card Builder</div>
+        <p id="headp"> Creating a Professional Profile Card has Never Been So Easy</p>
+      </div>
+      <div class="btn">
+        <p id="regp">For More Personalised Experienced <br>Register Now</p>
+        <input type=button id="regbutton" onClick="location.href='contact'"
+         value='Register here'>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="intro">
+    <p id="innerintro">You can make your own profile card just by a few clicks.<br>
+     <b> Attention , </b> Enter your details carefully !!!
+    </p> 
+  </div>
+
+  <div id="down">
+
+    <div id="backimg"> </div>
+
+    <div id="card">
+      <div id="leftbox">
+        <div id="lupper">
+         <canvas id="canvas"></canvas>
+         <label for="uploader"></label>
+         <input type="file" id="uploader" />
+        </div>
+        <div id="ldown">
+          <input type="text" id="name" placeholder="Enter Name">
+          <textarea name="myText" cols="22" rows="8" id="title" placeholder="Enter Your Title"></textarea>
+        </div>
+      </div>
+      <div id="rightbox">
+       <div id="rupper">
+         <div id="rupper1">
+          <div class="img" id="num"><img src=""></div>
+          <input type="number" class="basic" placeholder="Phone Number">
+          <div class="img" id="mail"><img src=""></div>
+          <input type="email" name="email" class="basic" placeholder="Email">
+         </div>
+        <div id="rupper2">
+          <div class="img" id="city"><img src=""></div>
+          <input type="text" name="city" class="basic" placeholder="City/Country">
+          <div class="img" id="cal"><img src=""></div>
+          <input type="date" name="dob" class="basic" placeholder="DOB">
+        </div> 
+       </div>
+       <div class="middle">
+       <div class="mleft">
+         <div id="skills">
+           <p id="hskills">Skills</p>
+           <textarea name="skills" cols="30" rows="5" id="tskills"></textarea>
+         </div>
+         <div id="achiev">
+          <p id="hachiev">Achievements</p>
+           <textarea name="achievements" cols="30" rows="7" id="tachievemnts"></textarea>
+         </div>
+       </div>
+       <div class="mright">
+          <div id="project">Projects</div>
+          <textarea name="projects" id="tproject" cols="30" rows="15"></textarea>
+       </div>
+      </div>
+       <div id="rdown"> 
+         <div class="linkedin">
+          <div class="simg"><img src="..//static/link.jpeg"></div>
+          <input type="text" class="social" placeholder="Link To LinkdeIn Profile">
+         </div>
+         <div class="github">
+          <div class="simg"><img src="../static/github.png"></div>
+          <input type="text" class="social" placeholder="Link To GitHub Profile">
+         </div>
+         <div class="facebook">
+          <div class="simg"><img src="../static/face.jpeg"></div>
+          <input type="text" class="social" placeholder="Link To FaceBook Profile">
+         </div>  
+       </div> 
+    </div>
+  </div>
+
+    <div id="links">
+       <div id="lhead">
+         Quick Tips
+       </div>
+       <div id="enginner">
+         <div class="lheading">Tips For Engineering Aspirants</div>
+         *<a href="https://alltogether.swe.org/2019/06/10-tips-for-writing-a-great-engineering-resume/" class="anchor">https://alltogether.swe.org/<br>2019/06/10-tips-for-writing-<br>a-great-engineering-resume/</a>
+         <!-- *<a href="https://www.colorado.edu/career/5-things-include-your-engineering-resume" class="anchor">https://www.colorado.edu/<br>career/5-things-include-your<br>-engineering-resume</a> -->
+       </div>
+
+       <div id="mba">
+        <div class="lheading">Tips For MBA Aspirants</div>
+     *<a href="https://e-gmat.com/blogs/10-tips-for-creating-a-standout-mba-admissions-resume/" class="anchor">https://e-gmat.com/blogs/<br>10-tips-for-creating-a-standout<br>-mba-admissions-resume/</a>
+        <!-- *<a href="https://www.shemmassianconsulting.com/blog/mba-resume" class="anchor">https://www.shemmassiancon<br>sulting.com/blog/mba-resume</a> -->
+      </div>
+
+      <div id="business">
+        <div class="lheading">Tips For Business Manager Aspirants</div>
+        *<a href="https://zety.com/blog/business-manager-resume-example" class="anchor">https://zety.com/blog/business<br>-manager-resume-example</a>
+      </div>
+
+      <!-- <div id="teacher">
+        <div class="lheading">Tips For Teachers</div>
+        *<a href="https://www.boredteachers.com/teaching-and-career-tips/10-awesome-tips-for-the-best-teacher-resume" class="anchor">https://www.boredteachers.com/teaching-and-career-tips/10-awesome-tips-for-the-best-teacher-resume</a>
+      </div> -->
+    </div>
+
+    <div class="image">
+    </div>
+
+</div>
+
+<div id="footer">
+     Copyright @ 2021 Profile Card || All Rights Reserved
+</div>
+
+   <script>  
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    
+    const reader = new FileReader();
+    const img = new Image();
+    const uploadImage = (e) => {
+      reader.onload = () => {
+        img.onload = () => {
+          canvas.width = img.width;
+          canvas.height = img.height;
+          ctx.drawImage(img, 0, 0);
+        };
+        img.src = reader.result;
+      };
+      reader.readAsDataURL(e.target.files[0]);
+    };
+    const imageLoader = document.getElementById("uploader");
+    imageLoader.addEventListener("change", uploadImage);
+
+  </script>
+
+
+</body>
+</html>
